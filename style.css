@@ -1,6 +1,10 @@
 body{
   font-family: sans-serif;
-  background-color: lightgray;
+  background-color: #F0F8FA ;
+  background-image: url(https://www.bankbsi.co.id/img/background_produk_layanan.png);
+  background-size: cover;
+  margin: 0;
+  padding: 0 12%;
 }
 
 .card-parent{
@@ -46,4 +50,29 @@ h2{
   border-radius: 8px;
   border: 0;
   margin: 0 auto;
+}
+.search-parent{
+    display: flex;
+    gap: 12px;
+    margin: 20px 0;
+    padding: 12px 24px;
+    background: white;
+    border-radius: 8px;
+
+}
+.select{
+  padding: 20px 12px;
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.select-button{
+  padding: 6px 32px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #F6AD3C;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
 }
