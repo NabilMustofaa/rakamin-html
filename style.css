@@ -1,49 +1,134 @@
-body{
+body {
   font-family: sans-serif;
-  background-color: #F0F8FA ;
-  background-image: url(https://www.bankbsi.co.id/img/background_produk_layanan.png);
   background-size: cover;
   margin: 0;
-  padding: 0 12%;
 }
 
-.card-parent{
+
+
+.portofolio {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 120px;
+}
+
+.portofolio-text {
+  width: 500px;
+  margin: auto 0;
+  text-align: justify;
+}
+
+.portofolio-button {
+  background-color: #FF6464;
+  color: white;
+  border: 0;
+  padding: 10px 20px;
+}
+
+
+.portofolio-photo-container {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  margin: auto 0;
+  position: relative;
+}
+
+.portofolio-photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.portofolio-shadow {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #EDF7FA;
+  position: absolute;
+  top: 13px;
+  right: 5px;
+  z-index: -1;
+}
+
+.work {
+  background-color: #EDF7FA;
+  padding: 12px 120px 32px;
+}
+
+.work-title {
+  text-align: left;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.work-card-parent {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  width: 100%;
+}
+
+.work-card {
+  border-radius: 8px;
+  padding: 30px 24px;
+  box-shadow: 0px 4px 10px 0px #BBE1FA40;
+  width: 50%;
+  min-height: 160px;
+  background-color: white;
+}
+
+.work-card p span {
+  margin: 0 8px;
+}
+
+.container {
+
+  padding: 12px 120px 32px;
+}
+
+.card-parent {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 36px;
+  gap: 24px;
 }
-.card{
+
+
+.card {
   border-radius: 8px;
   text-align: center;
-  padding: 30px 24px;
+  padding: 30px 20px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.24);
-  width: 196px;
+  width: 152px;
   max-width: 100%;
   min-height: 180px;
   background-color: white;
 }
 
-.card:hover{
+.card:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
 
-.title{
-  color :black
-
+.title {
+  color: black
 }
 
-h2{
+h2 {
   text-align: center;
   color: #333;
 }
-.icon{
+
+.icon {
   width: 60px;
   height: 60px;
 }
 
-.button{
+.button {
   display: flex;
   padding: 8px 12px;
   background-color: blueviolet;
@@ -51,23 +136,26 @@ h2{
   border: 0;
   margin: 0 auto;
 }
-.search-parent{
-    display: flex;
-    gap: 12px;
-    margin: 20px 0;
-    padding: 12px 24px;
-    background: white;
-    border-radius: 8px;
+
+.search-parent {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+  padding: 12px 24px;
+  background-color: #EDF7FA;
+  border-radius: 8px;
 
 }
-.select{
+
+.select {
   padding: 20px 12px;
   border: 0;
   border-radius: 8px;
   width: 100%;
+  background-color: #EDF7FA;
 }
 
-.select-button{
+.select-button {
   padding: 6px 32px;
   border: 0;
   border-radius: 8px;
@@ -75,4 +163,40 @@ h2{
   font-size: 16px;
   font-weight: 700;
   color: white;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .portofolio,
+  .work,
+  .container {
+    padding-right:48px !important;
+    padding-left: 48px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portofolio {
+    flex-direction: column-reverse;
+  }
+
+  .portofolio-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .portofolio-text {
+    max-width: 100%;
+    text-align: center !important;
+  }
+
+  .work-card-parent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .work-card {
+    width: 100%;
+  }
 }
